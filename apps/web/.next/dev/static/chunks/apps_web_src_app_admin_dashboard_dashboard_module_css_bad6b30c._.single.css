@@ -1,0 +1,115 @@
+/* [project]/apps/web/src/app/admin/dashboard/dashboard.module.css [app-client] (css) */
+.dashboard-module__XYSBrG__dashboard {
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.dashboard-module__XYSBrG__header {
+  color: #fff;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 10px #0000001a;
+}
+
+.dashboard-module__XYSBrG__headerContent {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.dashboard-module__XYSBrG__header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.dashboard-module__XYSBrG__userInfo {
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.dashboard-module__XYSBrG__logoutButton {
+  color: #fff;
+  cursor: pointer;
+  background: #fff3;
+  border: 1px solid #ffffff4d;
+  border-radius: 6px;
+  padding: 8px 16px;
+  transition: background .3s;
+}
+
+.dashboard-module__XYSBrG__logoutButton:hover {
+  background: #ffffff4d;
+}
+
+.dashboard-module__XYSBrG__tabs {
+  background: #fff;
+  border-bottom: 2px solid #e0e0e0;
+  gap: 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+}
+
+.dashboard-module__XYSBrG__tab {
+  cursor: pointer;
+  color: #666;
+  background: none;
+  border: none;
+  border-bottom: 3px solid #0000;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all .3s;
+}
+
+.dashboard-module__XYSBrG__tab:hover {
+  color: #1a1a2e;
+  background: #f9f9f9;
+}
+
+.dashboard-module__XYSBrG__tab.dashboard-module__XYSBrG__active {
+  color: #1a1a2e;
+  border-bottom-color: gold;
+  font-weight: 600;
+}
+
+.dashboard-module__XYSBrG__content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.dashboard-module__XYSBrG__loading {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.2rem;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .dashboard-module__XYSBrG__headerContent {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .dashboard-module__XYSBrG__tabs {
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+
+  .dashboard-module__XYSBrG__tab {
+    padding: .8rem 1rem;
+    font-size: .9rem;
+  }
+
+  .dashboard-module__XYSBrG__content {
+    padding: 1rem;
+  }
+}
+
+/*# sourceMappingURL=apps_web_src_app_admin_dashboard_dashboard_module_css_bad6b30c._.single.css.map*/

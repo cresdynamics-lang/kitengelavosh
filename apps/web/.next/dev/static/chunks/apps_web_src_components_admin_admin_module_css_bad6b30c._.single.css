@@ -1,0 +1,286 @@
+/* [project]/apps/web/src/components/admin/admin.module.css [app-client] (css) */
+.admin-module__0Q5I-G__container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px #0000001a;
+}
+
+.admin-module__0Q5I-G__header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.admin-module__0Q5I-G__header h2 {
+  color: #1a1a2e;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.admin-module__0Q5I-G__subtitle {
+  color: #666;
+  margin-top: .5rem;
+  font-size: .95rem;
+  font-weight: normal;
+}
+
+.admin-module__0Q5I-G__addButton {
+  color: #fff;
+  cursor: pointer;
+  background: #1a1a2e;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: background .3s;
+}
+
+.admin-module__0Q5I-G__addButton:hover {
+  background: #16213e;
+}
+
+.admin-module__0Q5I-G__loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+}
+
+.admin-module__0Q5I-G__formModal {
+  z-index: 1000;
+  background: #00000080;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.admin-module__0Q5I-G__formContent {
+  background: #fff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.admin-module__0Q5I-G__formContent h3 {
+  color: #1a1a2e;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.admin-module__0Q5I-G__formGroup {
+  margin-bottom: 1rem;
+}
+
+.admin-module__0Q5I-G__formGroup label {
+  color: #333;
+  margin-bottom: .5rem;
+  font-weight: 600;
+  display: block;
+}
+
+.admin-module__0Q5I-G__formGroup input, .admin-module__0Q5I-G__formGroup textarea, .admin-module__0Q5I-G__formGroup select {
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.admin-module__0Q5I-G__formGroup input:focus, .admin-module__0Q5I-G__formGroup textarea:focus, .admin-module__0Q5I-G__formGroup select:focus {
+  border-color: gold;
+  outline: none;
+}
+
+.admin-module__0Q5I-G__formRow {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  display: grid;
+}
+
+.admin-module__0Q5I-G__formActions {
+  gap: 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.admin-module__0Q5I-G__form {
+  max-width: 800px;
+}
+
+.admin-module__0Q5I-G__helpText {
+  color: #666;
+  margin-top: .25rem;
+  font-size: .85rem;
+  font-style: italic;
+}
+
+.admin-module__0Q5I-G__liveStreamLinkInput {
+  padding: .75rem 1rem;
+  font-size: 1rem;
+}
+
+.admin-module__0Q5I-G__detectedPlatform {
+  color: #228b22;
+  margin-top: .5rem;
+  font-size: .9rem;
+}
+
+.admin-module__0Q5I-G__infoBox {
+  background: #f8f9fa;
+  border-left: 4px solid gold;
+  border-radius: 6px;
+  margin-top: 2rem;
+  padding: 1.5rem;
+}
+
+.admin-module__0Q5I-G__infoBox h3 {
+  color: #1a1a2e;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.admin-module__0Q5I-G__infoBox ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.admin-module__0Q5I-G__infoBox li {
+  color: #555;
+  margin-bottom: .5rem;
+  line-height: 1.6;
+}
+
+.admin-module__0Q5I-G__saveButton {
+  color: #fff;
+  cursor: pointer;
+  background: #1a1a2e;
+  border: none;
+  border-radius: 6px;
+  flex: 1;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.admin-module__0Q5I-G__saveButton:hover {
+  background: #16213e;
+}
+
+.admin-module__0Q5I-G__cancelButton {
+  color: #333;
+  cursor: pointer;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 6px;
+  flex: 1;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.admin-module__0Q5I-G__cancelButton:hover {
+  background: #d0d0d0;
+}
+
+.admin-module__0Q5I-G__table {
+  overflow-x: auto;
+}
+
+.admin-module__0Q5I-G__table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.admin-module__0Q5I-G__table thead {
+  background: #f5f5f5;
+}
+
+.admin-module__0Q5I-G__table th {
+  text-align: left;
+  color: #333;
+  border-bottom: 2px solid #e0e0e0;
+  padding: 12px;
+  font-weight: 600;
+}
+
+.admin-module__0Q5I-G__table td {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px;
+}
+
+.admin-module__0Q5I-G__table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.admin-module__0Q5I-G__empty {
+  text-align: center;
+  color: #999;
+  padding: 2rem;
+}
+
+.admin-module__0Q5I-G__editButton, .admin-module__0Q5I-G__deleteButton {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  margin-right: 8px;
+  padding: 6px 12px;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.admin-module__0Q5I-G__editButton {
+  color: #1a1a2e;
+  background: gold;
+}
+
+.admin-module__0Q5I-G__editButton:hover {
+  background: orange;
+}
+
+.admin-module__0Q5I-G__deleteButton {
+  color: #fff;
+  background: #dc143c;
+}
+
+.admin-module__0Q5I-G__deleteButton:hover {
+  background: #b01030;
+}
+
+.admin-module__0Q5I-G__active {
+  color: #228b22;
+  font-weight: 600;
+}
+
+.admin-module__0Q5I-G__inactive {
+  color: #999;
+}
+
+.admin-module__0Q5I-G__roleSelect {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: .9rem;
+}
+
+@media (max-width: 768px) {
+  .admin-module__0Q5I-G__formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-module__0Q5I-G__table {
+    font-size: .9rem;
+  }
+
+  .admin-module__0Q5I-G__table th, .admin-module__0Q5I-G__table td {
+    padding: 8px;
+  }
+}
+
+/*# sourceMappingURL=apps_web_src_components_admin_admin_module_css_bad6b30c._.single.css.map*/

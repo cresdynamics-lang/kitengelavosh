@@ -1,0 +1,617 @@
+/* [project]/apps/web/src/components/Header.module.css [app-client] (css) */
+.Header-module__MytmHG__header {
+  z-index: 100;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 10px #0000001a;
+}
+
+.Header-module__MytmHG__container {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+}
+
+.Header-module__MytmHG__logoContainer {
+  align-items: center;
+  display: flex;
+}
+
+.Header-module__MytmHG__logoLink {
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  display: flex;
+}
+
+.Header-module__MytmHG__logo {
+  object-fit: cover;
+  border: 3px solid gold;
+  border-radius: 50%;
+}
+
+.Header-module__MytmHG__logoText {
+  flex-direction: column;
+  display: flex;
+}
+
+.Header-module__MytmHG__churchName {
+  color: gold;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.Header-module__MytmHG__location {
+  color: #fff;
+  margin: 0;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.Header-module__MytmHG__hamburger {
+  cursor: pointer;
+  z-index: 101;
+  background: none;
+  border: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: .5rem;
+  display: none;
+  position: relative;
+}
+
+.Header-module__MytmHG__hamburgerLine {
+  background-color: #fff;
+  border-radius: 3px;
+  width: 25px;
+  height: 3px;
+  transition: all .3s;
+}
+
+.Header-module__MytmHG__hamburger:hover .Header-module__MytmHG__hamburgerLine {
+  background-color: gold;
+}
+
+.Header-module__MytmHG__nav {
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.Header-module__MytmHG__navLink {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .3s;
+  position: relative;
+}
+
+.Header-module__MytmHG__navLink:hover {
+  color: gold;
+}
+
+.Header-module__MytmHG__navLink:after {
+  content: "";
+  background-color: gold;
+  width: 0;
+  height: 2px;
+  transition: width .3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.Header-module__MytmHG__navLink:hover:after {
+  width: 100%;
+}
+
+.Header-module__MytmHG__liveButton {
+  color: #fff;
+  background-color: #dc143c;
+  border-radius: 4px;
+  align-items: center;
+  gap: .5rem;
+  padding: .75rem 1.5rem;
+  font-size: .9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+  box-shadow: 0 2px 5px #dc143c4d;
+}
+
+.Header-module__MytmHG__liveButton:hover {
+  background-color: #b8122e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px #dc143c66;
+}
+
+.Header-module__MytmHG__liveDot {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  animation: 2s infinite Header-module__MytmHG__pulse;
+  display: inline-block;
+}
+
+@keyframes Header-module__MytmHG__pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .5;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Header-module__MytmHG__hamburger {
+    display: flex;
+  }
+
+  .Header-module__MytmHG__nav {
+    z-index: 100;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: 80%;
+    max-width: 400px;
+    height: 100vh;
+    padding: 5rem 2rem 2rem;
+    transition: right .3s;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    overflow-y: auto;
+    box-shadow: -5px 0 15px #0000004d;
+  }
+
+  .Header-module__MytmHG__overlay {
+    z-index: 99;
+    background: #00000080;
+    width: 100%;
+    height: 100vh;
+    animation: .3s Header-module__MytmHG__fadeIn;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  @keyframes Header-module__MytmHG__fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .Header-module__MytmHG__navOpen {
+    right: 0;
+  }
+
+  .Header-module__MytmHG__navLink {
+    border-bottom: 1px solid #ffffff1a;
+    width: 100%;
+    padding: .75rem 0;
+    font-size: 1.1rem;
+  }
+
+  .Header-module__MytmHG__navLink:after {
+    display: none;
+  }
+
+  .Header-module__MytmHG__liveButton {
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    padding: .75rem 1.5rem;
+    font-size: .9rem;
+  }
+
+  .Header-module__MytmHG__hamburgerOpen .Header-module__MytmHG__hamburgerLine:first-child {
+    transform: rotate(45deg)translate(8px, 8px);
+  }
+
+  .Header-module__MytmHG__hamburgerOpen .Header-module__MytmHG__hamburgerLine:nth-child(2) {
+    opacity: 0;
+  }
+
+  .Header-module__MytmHG__hamburgerOpen .Header-module__MytmHG__hamburgerLine:nth-child(3) {
+    transform: rotate(-45deg)translate(7px, -7px);
+  }
+}
+
+@media (max-width: 768px) {
+  .Header-module__MytmHG__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Header-module__MytmHG__churchName {
+    font-size: 1rem;
+  }
+
+  .Header-module__MytmHG__location {
+    font-size: .75rem;
+  }
+
+  .Header-module__MytmHG__logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .Header-module__MytmHG__logoText {
+    gap: .25rem;
+  }
+}
+
+/* [project]/apps/web/src/components/Footer.module.css [app-client] (css) */
+.Footer-module__drEjgq__footer {
+  color: #fff;
+  background: linear-gradient(135deg, #1a1a2e 0%, #000 100%);
+  padding: 60px 0 20px;
+}
+
+.Footer-module__drEjgq__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.Footer-module__drEjgq__footerContent {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
+  display: grid;
+}
+
+.Footer-module__drEjgq__footerSection {
+  flex-direction: column;
+  display: flex;
+}
+
+.Footer-module__drEjgq__footerTitle {
+  color: gold;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.Footer-module__drEjgq__footerDescription {
+  color: #fffc;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.Footer-module__drEjgq__slogan {
+  color: gold;
+  margin-top: .5rem;
+  font-size: 1rem;
+}
+
+.Footer-module__drEjgq__footerHeading {
+  color: gold;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.Footer-module__drEjgq__footerLinks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Footer-module__drEjgq__footerLinks li {
+  margin-bottom: .5rem;
+}
+
+.Footer-module__drEjgq__footerLinks a {
+  color: #fffc;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.Footer-module__drEjgq__footerLinks a:hover {
+  color: gold;
+}
+
+.Footer-module__drEjgq__footerValues {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Footer-module__drEjgq__footerValues li {
+  color: #fffc;
+  margin-bottom: .5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.Footer-module__drEjgq__footerValues li:before {
+  content: "›";
+  color: gold;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.Footer-module__drEjgq__footerText {
+  color: #fffc;
+  margin: 0 0 .75rem;
+  line-height: 1.6;
+}
+
+.Footer-module__drEjgq__phoneNumbers {
+  flex-direction: column;
+  gap: .4rem;
+  margin: .5rem 0;
+  display: flex;
+}
+
+.Footer-module__drEjgq__phoneLink {
+  color: gold;
+  font-size: .95rem;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.Footer-module__drEjgq__phoneLink:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.Footer-module__drEjgq__emailLink {
+  color: gold;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.Footer-module__drEjgq__emailLink:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.Footer-module__drEjgq__whatsappLink {
+  color: #25d366;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.Footer-module__drEjgq__whatsappLink:hover {
+  color: #128c7e;
+  text-decoration: underline;
+}
+
+.Footer-module__drEjgq__giveLink {
+  color: gold;
+  margin-top: .5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .3s;
+  display: inline-block;
+}
+
+.Footer-module__drEjgq__giveLink:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.Footer-module__drEjgq__socialLinks {
+  margin-top: 1.5rem;
+}
+
+.Footer-module__drEjgq__socialTitle {
+  color: gold;
+  margin-bottom: .75rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.Footer-module__drEjgq__socialIcons {
+  gap: 1rem;
+  display: flex;
+}
+
+.Footer-module__drEjgq__socialIcon {
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform .3s;
+  display: inline-block;
+}
+
+.Footer-module__drEjgq__socialIcon:hover {
+  transform: scale(1.2);
+}
+
+.Footer-module__drEjgq__footerBottom {
+  text-align: center;
+  border-top: 1px solid #ffffff1a;
+  padding-top: 2rem;
+}
+
+.Footer-module__drEjgq__copyright {
+  color: #fff9;
+  margin-bottom: .5rem;
+}
+
+.Footer-module__drEjgq__hashtags {
+  color: gold;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .Footer-module__drEjgq__footerContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .Footer-module__drEjgq__footer {
+    padding: 40px 0 20px;
+  }
+}
+
+/* [project]/apps/web/src/app/leadership/leadership.module.css [app-client] (css) */
+.leadership-module__Nd2xkW__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 20px;
+}
+
+.leadership-module__Nd2xkW__hero {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  padding: 3rem 0;
+}
+
+.leadership-module__Nd2xkW__title {
+  color: gold;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.leadership-module__Nd2xkW__subtitle {
+  opacity: .9;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.leadership-module__Nd2xkW__leadersGrid {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  display: grid;
+}
+
+.leadership-module__Nd2xkW__leaderCard {
+  color: inherit;
+  background: #fff;
+  border-radius: 8px;
+  flex-direction: column;
+  text-decoration: none;
+  transition: transform .3s, box-shadow .3s;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 2px 10px #0000001a;
+}
+
+.leadership-module__Nd2xkW__leaderCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px #00000026;
+}
+
+.leadership-module__Nd2xkW__imageContainer {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.leadership-module__Nd2xkW__leaderImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.leadership-module__Nd2xkW__placeholderImage {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.leadership-module__Nd2xkW__placeholderText {
+  color: gold;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.leadership-module__Nd2xkW__leaderInfo {
+  flex-direction: column;
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+}
+
+.leadership-module__Nd2xkW__leaderName {
+  color: #1a1a2e;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.leadership-module__Nd2xkW__leaderTitle {
+  color: #dc143c;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.leadership-module__Nd2xkW__leaderBio {
+  color: #2c2c2c;
+  flex: 1;
+  margin-bottom: 1rem;
+  font-size: .95rem;
+  line-height: 1.6;
+}
+
+.leadership-module__Nd2xkW__readMore {
+  color: #1a1a2e;
+  margin-top: auto;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.leadership-module__Nd2xkW__leaderCard:hover .leadership-module__Nd2xkW__readMore {
+  color: #dc143c;
+}
+
+.leadership-module__Nd2xkW__loading, .leadership-module__Nd2xkW__empty {
+  text-align: center;
+  color: #666;
+  padding: 3rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .leadership-module__Nd2xkW__title {
+    font-size: 2rem;
+  }
+
+  .leadership-module__Nd2xkW__subtitle {
+    font-size: 1rem;
+  }
+
+  .leadership-module__Nd2xkW__leadersGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .leadership-module__Nd2xkW__imageContainer {
+    height: 250px;
+  }
+}
+
+/*# sourceMappingURL=apps_web_src_379cad3b._.css.map*/

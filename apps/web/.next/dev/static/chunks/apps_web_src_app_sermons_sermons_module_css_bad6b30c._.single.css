@@ -1,0 +1,255 @@
+/* [project]/apps/web/src/app/sermons/sermons.module.css [app-client] (css) */
+.sermons-module__hpPDuq__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 20px;
+}
+
+.sermons-module__hpPDuq__title {
+  text-align: center;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.sermons-module__hpPDuq__subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.sermons-module__hpPDuq__loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+}
+
+.sermons-module__hpPDuq__liveSection {
+  color: #fff;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 12px;
+  margin-bottom: 4rem;
+  padding: 2rem;
+}
+
+.sermons-module__hpPDuq__liveBadge {
+  color: #fff;
+  background: #dc143c;
+  border-radius: 20px;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 1rem;
+  padding: .5rem 1rem;
+  font-size: .9rem;
+  font-weight: 700;
+  display: inline-flex;
+}
+
+.sermons-module__hpPDuq__liveDot {
+  background: #fff;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  animation: 2s infinite sermons-module__hpPDuq__pulse;
+}
+
+@keyframes sermons-module__hpPDuq__pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .5;
+  }
+}
+
+.sermons-module__hpPDuq__sectionTitle {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.sermons-module__hpPDuq__scheduleTime {
+  color: #ffffffe6;
+  margin-bottom: 1.5rem;
+}
+
+.sermons-module__hpPDuq__embedContainer {
+  background: #000;
+  border-radius: 8px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
+.sermons-module__hpPDuq__embed {
+  border: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sermons-module__hpPDuq__sermonsSection, .sermons-module__hpPDuq__latestSermon {
+  margin-bottom: 2rem;
+}
+
+.sermons-module__hpPDuq__latestSermon h3 {
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sermons-module__hpPDuq__playlist {
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.sermons-module__hpPDuq__playlist h3 {
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sermons-module__hpPDuq__playlistLink {
+  color: #fff;
+  background: #dc143c;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background .3s;
+  display: inline-block;
+}
+
+.sermons-module__hpPDuq__playlistLink:hover {
+  background: #b01030;
+}
+
+.sermons-module__hpPDuq__empty {
+  text-align: center;
+  color: #666;
+  padding: 4rem 2rem;
+  font-size: 1.1rem;
+}
+
+.sermons-module__hpPDuq__sermonsGrid {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  display: grid;
+}
+
+.sermons-module__hpPDuq__sermonCard {
+  background: #fff;
+  border-radius: 12px;
+  transition: transform .3s, box-shadow .3s;
+  overflow: hidden;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+.sermons-module__hpPDuq__sermonCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px #00000026;
+}
+
+.sermons-module__hpPDuq__sermonThumbnail {
+  background: #f0f0f0;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.sermons-module__hpPDuq__sermonThumbnail img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.sermons-module__hpPDuq__sermonContent {
+  padding: 1.5rem;
+}
+
+.sermons-module__hpPDuq__sermonTitle {
+  color: #1a1a2e;
+  margin-bottom: .5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.sermons-module__hpPDuq__sermonSpeaker {
+  color: #666;
+  margin-bottom: .5rem;
+  font-size: .95rem;
+}
+
+.sermons-module__hpPDuq__sermonDate {
+  color: #999;
+  margin-bottom: .75rem;
+  font-size: .9rem;
+}
+
+.sermons-module__hpPDuq__sermonDescription {
+  color: #555;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.sermons-module__hpPDuq__sermonDuration {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: .9rem;
+}
+
+.sermons-module__hpPDuq__sermonActions {
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.sermons-module__hpPDuq__sermonButton {
+  color: #fff;
+  background: #dc143c;
+  border-radius: 6px;
+  padding: .5rem 1rem;
+  font-size: .9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background .3s;
+}
+
+.sermons-module__hpPDuq__sermonButton:hover {
+  background: #b8122e;
+}
+
+.sermons-module__hpPDuq__sermonViews {
+  color: #999;
+  margin-top: .5rem;
+  font-size: .85rem;
+}
+
+@media (max-width: 768px) {
+  .sermons-module__hpPDuq__title {
+    font-size: 2rem;
+  }
+
+  .sermons-module__hpPDuq__liveSection {
+    padding: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=apps_web_src_app_sermons_sermons_module_css_bad6b30c._.single.css.map*/

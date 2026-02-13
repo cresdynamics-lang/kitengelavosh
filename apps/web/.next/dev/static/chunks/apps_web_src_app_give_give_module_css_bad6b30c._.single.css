@@ -1,0 +1,258 @@
+/* [project]/apps/web/src/app/give/give.module.css [app-client] (css) */
+.give-module__OmAQ8W__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 20px;
+}
+
+.give-module__OmAQ8W__hero {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  padding: 3rem 0;
+}
+
+.give-module__OmAQ8W__title {
+  color: gold;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.give-module__OmAQ8W__subtitle {
+  opacity: .9;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.give-module__OmAQ8W__section {
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  box-shadow: 0 2px 10px #0000001a;
+}
+
+.give-module__OmAQ8W__sectionTitle {
+  color: #1a1a2e;
+  border-bottom: 3px solid gold;
+  margin-bottom: 1.5rem;
+  padding-bottom: .5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.give-module__OmAQ8W__givingCard {
+  margin-top: 1.5rem;
+}
+
+.give-module__OmAQ8W__givingMethod {
+  background: linear-gradient(135deg, #f9f9f9 0%, #fff 100%);
+  border-left: 4px solid gold;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.give-module__OmAQ8W__methodHeader {
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.give-module__OmAQ8W__icon {
+  font-size: 2rem;
+}
+
+.give-module__OmAQ8W__methodHeader h3 {
+  color: #1a1a2e;
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.give-module__OmAQ8W__methodDetails {
+  flex-direction: column;
+  gap: 1rem;
+  display: flex;
+}
+
+.give-module__OmAQ8W__detailRow {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  display: flex;
+}
+
+.give-module__OmAQ8W__label {
+  color: #2c2c2c;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.give-module__OmAQ8W__value {
+  color: #dc143c;
+  font-family: monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.give-module__OmAQ8W__instructions {
+  background: #f9f9f9;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+}
+
+.give-module__OmAQ8W__instructions p {
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.give-module__OmAQ8W__instructions ol {
+  color: #2c2c2c;
+  margin-left: 1.5rem;
+  line-height: 2;
+}
+
+.give-module__OmAQ8W__instructions li {
+  margin-bottom: .5rem;
+}
+
+.give-module__OmAQ8W__categoriesGrid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+  display: grid;
+}
+
+.give-module__OmAQ8W__categoryCard {
+  text-align: center;
+  background: linear-gradient(135deg, #f9f9f9 0%, #fff 100%);
+  border-top: 4px solid gold;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.give-module__OmAQ8W__categoryCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px #0000001a;
+}
+
+.give-module__OmAQ8W__categoryIcon {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  display: block;
+}
+
+.give-module__OmAQ8W__categoryCard h3 {
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.give-module__OmAQ8W__categoryCard p {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.give-module__OmAQ8W__accountInfo {
+  color: #dc143c;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  font-family: monospace;
+  font-size: .95rem;
+  font-weight: 600;
+}
+
+.give-module__OmAQ8W__bankCard {
+  background: linear-gradient(135deg, #f9f9f9 0%, #fff 100%);
+  border-left: 4px solid #dc143c;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.give-module__OmAQ8W__bankInfo {
+  color: #2c2c2c;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.give-module__OmAQ8W__contactInfo {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.give-module__OmAQ8W__contactInfo p {
+  color: #2c2c2c;
+  margin-bottom: .5rem;
+  font-size: 1.05rem;
+}
+
+.give-module__OmAQ8W__scripture {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 8px;
+  padding: 2.5rem;
+}
+
+.give-module__OmAQ8W__scriptureText {
+  color: gold;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.give-module__OmAQ8W__scriptureReference {
+  opacity: .9;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .give-module__OmAQ8W__title {
+    font-size: 2rem;
+  }
+
+  .give-module__OmAQ8W__subtitle {
+    font-size: 1.1rem;
+  }
+
+  .give-module__OmAQ8W__section {
+    padding: 1.5rem;
+  }
+
+  .give-module__OmAQ8W__sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .give-module__OmAQ8W__detailRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+  }
+
+  .give-module__OmAQ8W__categoriesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .give-module__OmAQ8W__scriptureText {
+    font-size: 1.1rem;
+  }
+}
+
+/*# sourceMappingURL=apps_web_src_app_give_give_module_css_bad6b30c._.single.css.map*/

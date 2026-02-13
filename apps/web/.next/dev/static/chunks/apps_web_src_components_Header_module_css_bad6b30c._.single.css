@@ -1,0 +1,342 @@
+/* [project]/apps/web/src/components/Header.module.css [app-client] (css) */
+.Header-module__MytmHG__header {
+  z-index: 100;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 10px #0000001a;
+}
+
+.Header-module__MytmHG__container {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+}
+
+.Header-module__MytmHG__logoContainer {
+  align-items: center;
+  display: flex;
+}
+
+.Header-module__MytmHG__logoLink {
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  display: flex;
+}
+
+.Header-module__MytmHG__logo {
+  object-fit: cover;
+  border: 3px solid gold;
+  border-radius: 50%;
+}
+
+.Header-module__MytmHG__logoText {
+  flex-direction: column;
+  display: flex;
+}
+
+.Header-module__MytmHG__churchName {
+  color: gold;
+  margin: 0;
+  font-size: clamp(.75rem, 2.5vw + .5rem, 1.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.Header-module__MytmHG__location {
+  color: #fff;
+  margin: 0;
+  font-size: clamp(.65rem, 1.5vw + .4rem, .9rem);
+  font-weight: 500;
+}
+
+.Header-module__MytmHG__mobileActions {
+  align-items: center;
+  gap: .5rem;
+  display: none;
+}
+
+.Header-module__MytmHG__joinUsLiveButton {
+  color: #fff;
+  white-space: nowrap;
+  background-color: #dc143c;
+  border-radius: 4px;
+  align-items: center;
+  gap: .35rem;
+  padding: .4rem .6rem;
+  font-size: clamp(.65rem, 2vw + .4rem, .8rem);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+  box-shadow: 0 2px 5px #dc143c4d;
+}
+
+.Header-module__MytmHG__joinUsLiveButton:hover {
+  color: #fff;
+  background-color: #b8122e;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px #dc143c66;
+}
+
+.Header-module__MytmHG__hamburger {
+  cursor: pointer;
+  z-index: 101;
+  background: none;
+  border: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: .5rem;
+  display: none;
+  position: relative;
+}
+
+.Header-module__MytmHG__hamburgerLine {
+  background-color: #fff;
+  border-radius: 3px;
+  width: 25px;
+  height: 3px;
+  transition: all .3s;
+}
+
+.Header-module__MytmHG__hamburger:hover .Header-module__MytmHG__hamburgerLine {
+  background-color: gold;
+}
+
+.Header-module__MytmHG__nav {
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.Header-module__MytmHG__navLink {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .3s;
+  position: relative;
+}
+
+.Header-module__MytmHG__navLink:hover {
+  color: gold;
+}
+
+.Header-module__MytmHG__navLink:after {
+  content: "";
+  background-color: gold;
+  width: 0;
+  height: 2px;
+  transition: width .3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.Header-module__MytmHG__navLink:hover:after {
+  width: 100%;
+}
+
+.Header-module__MytmHG__liveButton {
+  color: #fff;
+  background-color: #dc143c;
+  border-radius: 4px;
+  align-items: center;
+  gap: .5rem;
+  padding: .75rem 1.5rem;
+  font-size: .9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+  box-shadow: 0 2px 5px #dc143c4d;
+}
+
+.Header-module__MytmHG__liveButton:hover {
+  background-color: #b8122e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px #dc143c66;
+}
+
+.Header-module__MytmHG__liveDot {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  animation: 2s infinite Header-module__MytmHG__pulse;
+  display: inline-block;
+}
+
+@keyframes Header-module__MytmHG__pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .5;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Header-module__MytmHG__mobileActions, .Header-module__MytmHG__hamburger {
+    display: flex;
+  }
+
+  .Header-module__MytmHG__container {
+    gap: .75rem;
+  }
+
+  .Header-module__MytmHG__nav {
+    z-index: 100;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: 80%;
+    max-width: 400px;
+    height: 100vh;
+    padding: 5rem 2rem 2rem;
+    transition: right .3s;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    overflow-y: auto;
+    box-shadow: -5px 0 15px #0000004d;
+  }
+
+  .Header-module__MytmHG__overlay {
+    z-index: 99;
+    background: #00000080;
+    width: 100%;
+    height: 100vh;
+    animation: .3s Header-module__MytmHG__fadeIn;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  @keyframes Header-module__MytmHG__fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .Header-module__MytmHG__navOpen {
+    right: 0;
+  }
+
+  .Header-module__MytmHG__navLink {
+    border-bottom: 1px solid #ffffff1a;
+    width: 100%;
+    padding: .75rem 0;
+    font-size: 1.1rem;
+  }
+
+  .Header-module__MytmHG__navLink:after {
+    display: none;
+  }
+
+  .Header-module__MytmHG__liveButton {
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    padding: .75rem 1.5rem;
+    font-size: .9rem;
+  }
+
+  .Header-module__MytmHG__hamburgerOpen .Header-module__MytmHG__hamburgerLine:first-child {
+    transform: rotate(45deg)translate(8px, 8px);
+  }
+
+  .Header-module__MytmHG__hamburgerOpen .Header-module__MytmHG__hamburgerLine:nth-child(2) {
+    opacity: 0;
+  }
+
+  .Header-module__MytmHG__hamburgerOpen .Header-module__MytmHG__hamburgerLine:nth-child(3) {
+    transform: rotate(-45deg)translate(7px, -7px);
+  }
+}
+
+@media (max-width: 768px) {
+  .Header-module__MytmHG__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+  }
+
+  .Header-module__MytmHG__churchName {
+    font-size: clamp(.7rem, 3vw + .5rem, 1rem);
+  }
+
+  .Header-module__MytmHG__location {
+    font-size: clamp(.6rem, 2vw + .35rem, .75rem);
+  }
+
+  .Header-module__MytmHG__logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .Header-module__MytmHG__logoText {
+    gap: .2rem;
+  }
+
+  .Header-module__MytmHG__logoLink {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Header-module__MytmHG__container {
+    gap: .5rem;
+    padding: 0 10px;
+  }
+
+  .Header-module__MytmHG__churchName {
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-width: 120px;
+    font-size: .7rem;
+    line-height: 1.15;
+    display: -webkit-box;
+    overflow: hidden;
+  }
+
+  .Header-module__MytmHG__location {
+    font-size: .6rem;
+  }
+
+  .Header-module__MytmHG__logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .Header-module__MytmHG__joinUsLiveButton {
+    padding: .35rem .5rem;
+    font-size: .65rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .Header-module__MytmHG__churchName {
+    max-width: 100px;
+    font-size: .65rem;
+  }
+
+  .Header-module__MytmHG__location {
+    font-size: .55rem;
+  }
+}
+
+/*# sourceMappingURL=apps_web_src_components_Header_module_css_bad6b30c._.single.css.map*/

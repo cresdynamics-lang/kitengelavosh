@@ -1,0 +1,173 @@
+/* [project]/apps/web/src/components/CoreValues.module.css [app-client] (css) */
+.CoreValues-module__mmh9ga__coreValuesSection {
+  color: #fff;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  padding: 80px 0;
+}
+
+.CoreValues-module__mmh9ga__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.CoreValues-module__mmh9ga__sectionTitle {
+  text-align: center;
+  color: gold;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.CoreValues-module__mmh9ga__sectionSubtitle {
+  text-align: center;
+  color: #ffffffe6;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.CoreValues-module__mmh9ga__valuesGrid {
+  scrollbar-width: thin;
+  scrollbar-color: #ffd70080 transparent;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  display: flex;
+  overflow-x: auto;
+}
+
+.CoreValues-module__mmh9ga__valuesGrid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.CoreValues-module__mmh9ga__valuesGrid::-webkit-scrollbar-track {
+  background: none;
+}
+
+.CoreValues-module__mmh9ga__valuesGrid::-webkit-scrollbar-thumb {
+  background: #ffd70080;
+  border-radius: 3px;
+}
+
+.CoreValues-module__mmh9ga__valuesGrid::-webkit-scrollbar-thumb:hover {
+  background: #ffd700b3;
+}
+
+.CoreValues-module__mmh9ga__valueCard {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  background: #ffffff1a;
+  border: 2px solid #0000;
+  border-radius: 12px;
+  flex: 1 1 0;
+  min-width: 150px;
+  max-width: 200px;
+  padding: 1.5rem 1rem;
+  transition: all .3s;
+}
+
+.CoreValues-module__mmh9ga__valueCard:hover {
+  background: #ffffff26;
+  border-color: gold;
+  transform: translateY(-5px);
+}
+
+.CoreValues-module__mmh9ga__valueIcon {
+  color: gold;
+  margin-bottom: .75rem;
+  font-size: 2.5rem;
+}
+
+.CoreValues-module__mmh9ga__arrow {
+  font-weight: bold;
+  display: inline-block;
+}
+
+.CoreValues-module__mmh9ga__valueName {
+  color: #fff;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.CoreValues-module__mmh9ga__hashtags {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.CoreValues-module__mmh9ga__hashtag {
+  color: gold;
+  background: #ffd70033;
+  border: 2px solid gold;
+  border-radius: 25px;
+  padding: .8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .CoreValues-module__mmh9ga__valuesGrid {
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .CoreValues-module__mmh9ga__valueCard {
+    min-width: 140px;
+    padding: 1.25rem .75rem;
+  }
+
+  .CoreValues-module__mmh9ga__valueIcon {
+    font-size: 2rem;
+  }
+
+  .CoreValues-module__mmh9ga__valueName {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .CoreValues-module__mmh9ga__sectionTitle {
+    font-size: 2rem;
+  }
+
+  .CoreValues-module__mmh9ga__sectionSubtitle {
+    font-size: 1rem;
+  }
+
+  .CoreValues-module__mmh9ga__valuesGrid {
+    gap: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .CoreValues-module__mmh9ga__valueCard {
+    min-width: 120px;
+    padding: 1rem .5rem;
+  }
+
+  .CoreValues-module__mmh9ga__valueIcon {
+    margin-bottom: .5rem;
+    font-size: 1.8rem;
+  }
+
+  .CoreValues-module__mmh9ga__valueName {
+    font-size: 1rem;
+  }
+
+  .CoreValues-module__mmh9ga__hashtags {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+/*# sourceMappingURL=apps_web_src_components_CoreValues_module_css_bad6b30c._.single.css.map*/

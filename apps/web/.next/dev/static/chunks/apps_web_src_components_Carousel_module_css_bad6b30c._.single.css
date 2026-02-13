@@ -1,0 +1,304 @@
+/* [project]/apps/web/src/components/Carousel.module.css [app-client] (css) */
+.Carousel-module__2Tq1JW__carouselContainer {
+  width: 100%;
+  margin-top: 0;
+  position: relative;
+}
+
+.Carousel-module__2Tq1JW__carousel {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Carousel-module__2Tq1JW__slideContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.Carousel-module__2Tq1JW__slide {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity .8s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Carousel-module__2Tq1JW__slide.Carousel-module__2Tq1JW__active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.Carousel-module__2Tq1JW__imageWrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.Carousel-module__2Tq1JW__image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.Carousel-module__2Tq1JW__overlay {
+  z-index: 1;
+  background: linear-gradient(#1a1a2e99 0%, #1a1a2e66 50%, #1a1a2eb3 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Carousel-module__2Tq1JW__content {
+  z-index: 2;
+  color: #fff;
+  max-width: 1000px;
+  padding: 60px 40px 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.Carousel-module__2Tq1JW__title {
+  text-shadow: 2px 2px 4px #00000080;
+  color: gold;
+  margin-bottom: 1rem;
+  font-size: clamp(1.25rem, 5vw + .5rem, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.Carousel-module__2Tq1JW__description {
+  text-shadow: 1px 1px 3px #00000080;
+  max-width: 800px;
+  margin-bottom: 1.5rem;
+  font-size: clamp(.9rem, 2.5vw + .5rem, 1.5rem);
+  font-weight: 400;
+}
+
+.Carousel-module__2Tq1JW__phoneNumbersRow {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.Carousel-module__2Tq1JW__phoneLinkUnderlined {
+  color: gold;
+  text-shadow: 1px 1px 2px #00000080;
+  border-bottom: 2px solid gold;
+  padding-bottom: 2px;
+  font-size: clamp(.8rem, 2vw + .4rem, 1.1rem);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.Carousel-module__2Tq1JW__phoneLinkUnderlined:hover {
+  color: orange;
+  border-bottom-color: orange;
+}
+
+.Carousel-module__2Tq1JW__locationUnderlined {
+  color: #fff;
+  text-shadow: 1px 1px 2px #00000080;
+  border-bottom: 2px solid gold;
+  margin-top: 1.5rem;
+  padding-bottom: 4px;
+  font-size: clamp(.85rem, 2vw + .4rem, 1.2rem);
+  font-weight: 600;
+  line-height: 1.6;
+  display: inline-block;
+}
+
+.Carousel-module__2Tq1JW__servicesList {
+  flex-direction: column;
+  gap: .75rem;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.Carousel-module__2Tq1JW__serviceItem {
+  text-shadow: 1px 1px 2px #00000080;
+  color: #fff;
+  font-size: clamp(.8rem, 1.8vw + .4rem, 1.1rem);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.Carousel-module__2Tq1JW__arrow {
+  color: #fff;
+  cursor: pointer;
+  z-index: 3;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: #ffffff4d;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: 3rem;
+  transition: all .3s;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Carousel-module__2Tq1JW__arrow:hover {
+  background: #ffffff80;
+  transform: translateY(-50%)scale(1.1);
+}
+
+.Carousel-module__2Tq1JW__arrowLeft {
+  left: 20px;
+}
+
+.Carousel-module__2Tq1JW__arrowRight {
+  right: 20px;
+}
+
+.Carousel-module__2Tq1JW__dots {
+  z-index: 3;
+  gap: 10px;
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Carousel-module__2Tq1JW__dot {
+  cursor: pointer;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  transition: all .3s;
+}
+
+.Carousel-module__2Tq1JW__dot:hover {
+  background: #ffffff80;
+}
+
+.Carousel-module__2Tq1JW__dot.Carousel-module__2Tq1JW__active {
+  background: gold;
+  border-color: gold;
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 768px) {
+  .Carousel-module__2Tq1JW__carousel {
+    height: 550px;
+  }
+
+  .Carousel-module__2Tq1JW__title {
+    font-size: clamp(1.1rem, 4vw + .5rem, 1.8rem);
+  }
+
+  .Carousel-module__2Tq1JW__description {
+    margin-bottom: 1rem;
+    font-size: clamp(.85rem, 2vw + .4rem, 1.1rem);
+  }
+
+  .Carousel-module__2Tq1JW__content {
+    padding: 30px 20px 25px;
+  }
+
+  .Carousel-module__2Tq1JW__phoneNumbersRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .Carousel-module__2Tq1JW__phoneLinkUnderlined {
+    font-size: .95rem;
+  }
+
+  .Carousel-module__2Tq1JW__locationUnderlined {
+    font-size: 1rem;
+  }
+
+  .Carousel-module__2Tq1JW__serviceItem {
+    font-size: .95rem;
+  }
+
+  .Carousel-module__2Tq1JW__arrow {
+    width: 50px;
+    height: 50px;
+    font-size: 2.5rem;
+  }
+
+  .Carousel-module__2Tq1JW__arrowLeft {
+    left: 10px;
+  }
+
+  .Carousel-module__2Tq1JW__arrowRight {
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Carousel-module__2Tq1JW__carousel {
+    height: 480px;
+  }
+
+  .Carousel-module__2Tq1JW__content {
+    padding: 20px 14px;
+  }
+
+  .Carousel-module__2Tq1JW__title {
+    font-size: 1rem;
+  }
+
+  .Carousel-module__2Tq1JW__description {
+    margin-bottom: .75rem;
+    font-size: .85rem;
+  }
+
+  .Carousel-module__2Tq1JW__phoneLinkUnderlined {
+    font-size: .8rem;
+  }
+
+  .Carousel-module__2Tq1JW__locationUnderlined {
+    font-size: .85rem;
+  }
+
+  .Carousel-module__2Tq1JW__serviceItem {
+    font-size: .8rem;
+  }
+
+  .Carousel-module__2Tq1JW__arrow {
+    width: 44px;
+    height: 44px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .Carousel-module__2Tq1JW__carousel {
+    height: 420px;
+  }
+
+  .Carousel-module__2Tq1JW__title {
+    font-size: .9rem;
+  }
+
+  .Carousel-module__2Tq1JW__description {
+    font-size: .8rem;
+  }
+}
+
+/*# sourceMappingURL=apps_web_src_components_Carousel_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,103 @@
+/* [project]/apps/web/src/app/admin/login/login.module.css [app-client] (css) */
+.login-module__TnJ2sa__loginContainer {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+}
+
+.login-module__TnJ2sa__loginBox {
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px #0000004d;
+}
+
+.login-module__TnJ2sa__logoSection {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-module__TnJ2sa__logoSection h1 {
+  color: #1a1a2e;
+  margin-bottom: .5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.login-module__TnJ2sa__logoSection p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.login-module__TnJ2sa__form {
+  flex-direction: column;
+  gap: 1.5rem;
+  display: flex;
+}
+
+.login-module__TnJ2sa__inputGroup {
+  flex-direction: column;
+  gap: .5rem;
+  display: flex;
+}
+
+.login-module__TnJ2sa__inputGroup label {
+  color: #333;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.login-module__TnJ2sa__inputGroup input {
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 1rem;
+  transition: border-color .3s;
+}
+
+.login-module__TnJ2sa__inputGroup input:focus {
+  border-color: gold;
+  outline: none;
+}
+
+.login-module__TnJ2sa__inputGroup input:disabled {
+  cursor: not-allowed;
+  background: #f5f5f5;
+}
+
+.login-module__TnJ2sa__submitButton {
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform .2s;
+}
+
+.login-module__TnJ2sa__submitButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.login-module__TnJ2sa__submitButton:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.login-module__TnJ2sa__error {
+  color: #c33;
+  background: #fee;
+  border: 1px solid #fcc;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: .9rem;
+}
+
+/*# sourceMappingURL=apps_web_src_app_admin_login_login_module_4ab7e1a9.css.map*/
