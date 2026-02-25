@@ -134,11 +134,11 @@ async function main() {
             orderIndex: 1,
         },
     });
-    // Create default admin
+    // Create default admin (always update password so seed ensures admin123 works)
     const adminPassword = await (0, argon2_1.hash)('admin123');
     await prisma.admin.upsert({
         where: { username: 'admin' },
-        update: {},
+        update: { passwordHash: adminPassword },
         create: {
             username: 'admin',
             email: 'admin@voshkitengela.org',
@@ -148,6 +148,7 @@ async function main() {
             isSuperAdmin: true,
         },
     });
+    console.log('✅ Admin user: username=admin, password=admin123');
     // Create default LiveStream
     await prisma.liveStream.upsert({
         where: { id: 'default' },

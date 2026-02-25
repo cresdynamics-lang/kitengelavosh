@@ -134,4 +134,36 @@ export async function publicRoutes(fastify: FastifyInstance) {
       return { success: true, data: leaders }
     })
   })
+
+  // Update Links (public list for footer etc.)
+  fastify.get('/links', async () => {
+    return getCached('public:links', async () => {
+      const links = await prisma.updateLink.findMany({
+        where: { isActive: true },
+        orderBy: { orderIndex: 'asc' },
+      })
+      return { success: true, data: links }
+    })
+  })
+
+  // Contact form → email via Resend
+  fastify.post('/contact', async (request) => {
+    const body = request.body as { name?: string; email?: string; message?: string }
+    const name = (body.name || '').toString().slice(0, 200)
+    const email = (body.email || '').toString().slice(0, 200)
+    const message = (body.message || '').toString().slice(0, 5000)
+
+    if (!message) {
+      return { success: false, error: 'Message is required' }
+    }
+
+    try {
+      const { sendContactEmail } = await import('../utils/email')
+      await sendContactEmail({ name, email, message })
+      return { success: true }
+    } catch (error) {
+      console.error('Error sending contact email:', error)
+      return { success: false, error: 'Failed to send message' }
+    }
+  })
 }

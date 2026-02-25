@@ -287,6 +287,64 @@ export async function adminRoutes(fastify: FastifyInstance) {
     return { success: true, message: 'Leader deleted' }
   })
 
+  // Update Links CRUD
+  fastify.get('/update-links', async () => {
+    const links = await prisma.updateLink.findMany({
+      orderBy: { orderIndex: 'asc' },
+    })
+    return { success: true, data: links }
+  })
+
+  fastify.post('/update-links', async (request: FastifyRequest) => {
+    const body = request.body as { title: string; url: string; description?: string; category?: string; is_active?: boolean; display_order?: number }
+    const adminId = request.admin!.id
+
+    const link = await prisma.updateLink.create({
+      data: {
+        title: body.title,
+        url: body.url,
+        description: body.description ?? '',
+        category: body.category ?? 'General',
+        isActive: body.is_active ?? true,
+        orderIndex: body.display_order ?? 0,
+        updatedBy: adminId,
+      },
+    })
+
+    await invalidateCache('public:links*')
+    return { success: true, data: link }
+  })
+
+  fastify.put<{ Params: { id: string } }>('/update-links/:id', async (request) => {
+    const body = request.body as { title?: string; url?: string; description?: string; category?: string; is_active?: boolean; display_order?: number }
+    const adminId = request.admin!.id
+
+    const link = await prisma.updateLink.update({
+      where: { id: request.params.id },
+      data: {
+        ...(body.title != null && { title: body.title }),
+        ...(body.url != null && { url: body.url }),
+        ...(body.description != null && { description: body.description }),
+        ...(body.category != null && { category: body.category }),
+        ...(body.is_active != null && { isActive: body.is_active }),
+        ...(body.display_order != null && { orderIndex: body.display_order }),
+        updatedBy: adminId,
+      },
+    })
+
+    await invalidateCache('public:links*')
+    return { success: true, data: link }
+  })
+
+  fastify.delete<{ Params: { id: string } }>('/update-links/:id', async (request) => {
+    await prisma.updateLink.delete({
+      where: { id: request.params.id },
+    })
+
+    await invalidateCache('public:links*')
+    return { success: true, message: 'Link deleted' }
+  })
+
   // Admins CRUD (super admin only)
   fastify.get('/admins', async (request: FastifyRequest, reply: FastifyReply) => {
     if (!request.admin!.isSuperAdmin) {

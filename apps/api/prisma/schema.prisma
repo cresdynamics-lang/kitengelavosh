@@ -130,6 +130,21 @@ model Leader {
   @@index([orderIndex])
 }
 
+model UpdateLink {
+  id           String   @id @default(cuid())
+  title        String
+  url          String
+  description  String?  @default("")
+  category     String   @default("General")
+  isActive     Boolean  @default(true) @map("is_active")
+  orderIndex   Int      @default(0) @map("order_index")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+  updatedBy    String?  @map("updated_by")
+
+  @@map("update_links")
+}
+
 model Admin {
   id           String   @id @default(cuid())
   username     String   @unique
